@@ -1,3 +1,6 @@
+import { ButtonA } from "../ButtonA";
+import { ButtonSwitch } from "../ButtonSwitch";
+
 export const Header = () => {
   return (
     <div className="w-full h-12 flex bg-stone-900 justify-items-center justify-center border-b-2 border-rose-400">
@@ -8,10 +11,10 @@ export const Header = () => {
           </h1>
         </div>
         <nav className="hidden z-1 text-stone-50 gap-11 md:flex md:z-0">
-          <a href="">Sobre Mim</a>
-          <a href="">Sobre Mim</a>
-          <a href="">Sobre Mim</a>
-          <button className="text-stone-50">Dark</button>
+          <ButtonA buttonText="Sobre Mim" />
+          <ButtonA buttonText="Projetos" />
+          <ButtonA buttonText="Contatos" />
+          <ButtonSwitch />
         </nav>
         <svg
           xmlns="http://www.w3.org/2000/svg"
