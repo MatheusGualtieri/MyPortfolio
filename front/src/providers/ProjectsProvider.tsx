@@ -1,25 +1,41 @@
 import { createContext, ReactNode } from "react";
 
+import { useState } from "react";
+import { api } from "../services/api";
 interface ProjectsProviderProps {
   children: ReactNode;
 }
 
 interface ProjectsContextValues {
-  getData: (data: any) => Promise<void>;
+  getData: () => Promise<void>;
+  repositories: ReposType[];
+}
+
+interface ReposType {
+  id: number;
+  name: string;
+  language: string;
+  description: string;
+  html_url: string;
+  homepage: string;
 }
 
 export const ProjectsContext = createContext({} as ProjectsContextValues);
 
 export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
-  const getData = async (data: any) => {
+  const [repositories, setRepositories] = useState<ReposType[]>([]);
+  const getData = async () => {
     try {
-      return;
+      const response = await api.get(
+        `https://api.github.com/users/MatheusGualtieri/repos?sort=created&direction=desc`
+      );
+      setRepositories(response.data);
     } catch (error) {
       console.log(error);
     }
   };
   return (
-    <ProjectsContext.Provider value={{ getData }}>
+    <ProjectsContext.Provider value={{ getData, repositories }}>
       {children}
     </ProjectsContext.Provider>
   );

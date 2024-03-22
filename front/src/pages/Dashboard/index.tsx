@@ -1,5 +1,6 @@
 import { AboutMeSection } from "../../components/AboutMeSection";
 import { Header } from "../../components/Header";
+import { ProjectsSection } from "../../components/ProjectsSection";
 import { ShowcaseSection } from "../../components/ShowcaseSection";
 
 export const Dashboard = () => {
@@ -8,6 +9,7 @@ export const Dashboard = () => {
       <Header />
       <ShowcaseSection />
       <AboutMeSection />
+      <ProjectsSection />
     </div>
   );
 };
