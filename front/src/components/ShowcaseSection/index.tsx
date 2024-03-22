@@ -4,9 +4,9 @@ import { ButtonMainAlt } from "../ButtonMainAlt";
 export const ShowcaseSection = () => {
   return (
     <>
-      <div className="bg-stone-900 w-full h-[35rem] md:h-[42rem] bg-lines-alt bg-no-repeat bg-cover b brightness-110  absolute "></div>
-      <div className=" w-full  p-8  h-[35rem] md:h-[42rem] bg-lines bg-no-repeat bg-cover absolute flex justify-center items-center">
-        <div className=" w-full max-w-[1200px] md:h-full  p-8 absolute flex flex-col-reverse md:flex-row gap-8 md:gap-0">
+      <div className=" w-full h-[35rem] md:h-[42rem] bg-lines bg-no-repeat bg-cover b brightness-110 absolute"></div>
+      <div className="box-border bg-stone-900 w-full max-w-full h-[35rem] md:h-[42rem] bg-lines-alt bg-no-repeat bg-cover flex justify-center items-center ">
+        <div className="px-8 w-full max-w-[1200px] md:h-full absolute flex flex-col-reverse md:flex-row gap-8 md:gap-0">
           <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center md:items-start  gap-6">
             <div>
               <h1 className="text-2xl md:text-4xl text-stone-50 ">

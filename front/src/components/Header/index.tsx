@@ -3,7 +3,7 @@ import { ButtonSwitch } from "../ButtonSwitch";
 
 export const Header = () => {
   return (
-    <div className="bg-stone-50 sticky top-0 w-full h-12 flex dark:bg-stone-900 justify-items-center justify-center border-b-2 border-rose-400 transition-all duration-300">
+    <div className="box-border bg-stone-50 fixed top-0 w-full max-w-1/2 h-12 flex dark:bg-stone-900 justify-items-center justify-center border-b-2 border-rose-400 transition-all duration-300 z-[2]">
       <div className="px-8 w-full flex justify-between items-center h-full md:px-0 md:max-w-[700px] xl:max-w-[1000px]">
         <div className="">
           <h1 className="dark:text-stone-50">
