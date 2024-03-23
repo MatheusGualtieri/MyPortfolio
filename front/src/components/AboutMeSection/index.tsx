@@ -2,7 +2,7 @@ import { TechList } from "../TechList";
 
 export const AboutMeSection = () => {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full" id="about-me">
       <div className="my-8 box-border px-8 w-full max-w-[1200px] h-auto flex flex-col gap-6 md:">
         <h1 className="text-stone-900 dark:text-stone-50 text-center text-3xl">
           Sobre mim

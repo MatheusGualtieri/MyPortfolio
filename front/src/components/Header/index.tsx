@@ -11,9 +11,9 @@ export const Header = () => {
           </h1>
         </div>
         <nav className="hidden z-1 dark:text-stone-50 gap-11 md:flex md:z-0">
-          <ButtonA buttonText="Sobre Mim" />
-          <ButtonA buttonText="Projetos" />
-          <ButtonA buttonText="Contatos" />
+          <ButtonA buttonText="Sobre Mim" buttonLink="#about-me" />
+          <ButtonA buttonText="Projetos" buttonLink="#projects" />
+          <ButtonA buttonText="Contatos" buttonLink="#contacts" />
           <ButtonSwitch />
         </nav>
         <svg
