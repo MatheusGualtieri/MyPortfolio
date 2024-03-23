@@ -1,4 +1,5 @@
 import { AboutMeSection } from "../../components/AboutMeSection";
+import { ContactSection } from "../../components/ContactSection";
 import { Header } from "../../components/Header";
 import { ProjectsSection } from "../../components/ProjectsSection";
 import { ShowcaseSection } from "../../components/ShowcaseSection";
@@ -10,6 +11,7 @@ export const Dashboard = () => {
       <ShowcaseSection />
       <AboutMeSection />
       <ProjectsSection />
+      <ContactSection />
     </div>
   );
 };
