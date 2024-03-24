@@ -8,10 +8,12 @@ export const AboutMeSection = () => {
           Sobre mim
         </h1>
         <p className="text-stone-600 dark:text-stone-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          eveniet eum facere veritatis labore consequatur. Cupiditate quia magni
-          perspiciatis iste, soluta quas quaerat dolorem obcaecati dolorum, iure
-          doloremque atque! Ex?
+          Desenvolvedor FullStack com experiência em React.js, Node.js,
+          TypeScript, TypeORM, Styled Components, Python, Django, consumo e
+          criação de APIs REST. Possuo experiência com metodologias Ágeis.
+          Possuo Inglês intermediário-avançado. Formado em Análise e
+          Desenvolvimento de Sistemas na Estácio, curso Técnico de Informática
+          na ETEC, e um curso Desenvolvedor Fullstack na Kenzie Academy
         </p>
         <h2 className="text-stone-900 dark:text-stone-50 text-center text-2xl">
           Habilidades
