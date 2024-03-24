@@ -17,7 +17,11 @@ export const ShowcaseSection = () => {
               </h2>
             </div>
             <div className="w-full flex flex-col md:flex-row gap-6 items-center">
-              <ButtonMainAlt buttonText="Baixar CV" width="w-52" />
+              <ButtonMainAlt
+                buttonText="Baixar CV"
+                width="w-52"
+                buttonLink="../../../public/MatheusGualtieriCVFullStack.pdf"
+              />
               <ButtonMain
                 buttonText="Entre em contato"
                 width="w-52"

@@ -3,7 +3,6 @@ interface ModalMenuProps {
 }
 import { IoMdCloseCircle } from "react-icons/io";
 import { ButtonA } from "../ButtonA";
-import { ButtonSwitch } from "../ButtonSwitch";
 import { useEffect, useRef } from "react";
 
 export const ModalMenu = ({ toggleModal }: ModalMenuProps) => {
