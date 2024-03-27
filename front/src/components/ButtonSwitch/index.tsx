@@ -1,7 +1,21 @@
+import { useEffect } from "react";
+
 export const ButtonSwitch = () => {
   const toggleTheme = () => {
+    const isDark = localStorage.getItem("darkmode");
     document.documentElement.classList.toggle("dark");
+    if (isDark == "true") {
+      localStorage.removeItem("darkmode");
+    } else {
+      localStorage.setItem("darkmode", "true");
+    }
   };
+  useEffect(() => {
+    const isDark = localStorage.getItem("darkmode");
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
   return (
     <div
       className={`group rounded-full dark:bg-rose-600 w-7 h-7 border border-rose-600 hover:bg-rose-600 dark:border-rose-600 dark:hover:bg-transparent flex items-center justify-center cursor-pointer transition-all duration-500`}
