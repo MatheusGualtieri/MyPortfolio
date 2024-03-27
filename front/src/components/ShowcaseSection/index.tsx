@@ -20,7 +20,7 @@ export const ShowcaseSection = () => {
               <ButtonMainAlt
                 buttonText="Baixar CV"
                 width="w-52"
-                buttonLink="/public/MatheusGualtieriCVFullStack.pdf"
+                buttonLink="/MatheusGualtieriCVFullStack.pdf"
               />
               <ButtonMain
                 buttonText="Entre em contato"
@@ -34,8 +34,8 @@ export const ShowcaseSection = () => {
             <div className="w-52 h-auto md:w-72 border-2 border-rose-800 rounded-full flex justify-center ">
               <img
                 className="w-52 h-auto md:w-[286px] rounded-full blur-none"
-                src="/public/selfie.png"
-                alt=""
+                src="/selfie.png"
+                alt="Selfie"
               />
             </div>
           </div>
