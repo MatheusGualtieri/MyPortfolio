@@ -11,9 +11,12 @@ export const Header = ({ toggleModal }: HeaderProps) => {
     <div className="box-border bg-stone-50 fixed top-0 w-full max-w-1/2 h-12 flex dark:bg-stone-900 justify-items-center justify-center border-b-2 border-rose-400 transition-all duration-300 z-[2]">
       <div className="px-8 w-full flex justify-between items-center h-full max-w-[1200px]">
         <div className="">
-          <h1 className="dark:text-stone-50">
+          <a
+            className="text-stone-950 text-2xl dark:text-stone-50 hover:brightness-90"
+            href="#showcase"
+          >
             My<span className="text-rose-400">Portfolio</span>
-          </h1>
+          </a>
         </div>
         <div className="flex gap-8">
           <ButtonSwitch />
